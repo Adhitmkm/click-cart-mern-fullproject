@@ -1,0 +1,274 @@
+ *{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+.main-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-between;
+  height:80px;
+  width: 90%;
+  align-items: center;
+  padding: 50px 20px ;
+  border-bottom: 1px solid;
+  /* gap: 20px; */
+}
+.logo {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-1 {
+  width: 150px;
+  height: auto;
+  color: aquamarine;
+}
+.pages {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 28%;
+  gap: 15px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+.home-nav {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.link-style {
+  color: inherit; /* Inherits text color */
+  text-decoration: none; /* Removes underline */
+}
+.icons {
+  display: flex;
+  /* width: 10%; */
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  gap: 30px;
+  /* margin-right: 20px; */
+}
+.serch-2 {
+  display: none;
+}
+.serch{
+  width: 150px;
+  border-radius: 20px;
+  border: 1px solid;
+  border-color: rgb(151, 153, 153);
+}
+.search-box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5.5px;
+
+}
+.serch-1{
+width: 15px;
+height: 15px;
+}
+.icons .icon-2{
+position: absolute;
+right: -4px;
+background-color: black;
+width: 15px;
+height: 15px;
+border-radius: 50%;
+top: 13px;
+padding-left: 4.5px;
+padding-top: 1.5px;
+
+}
+.icons .icon-2 p{
+  font-size: 11px;
+  color: white;
+  font-weight: 400;
+}
+.menu-list {
+  display: none;
+}
+/* .serch-1 {
+  cursor: pointer;
+} */
+.profile-1 {
+  cursor: pointer;
+}
+.cart-1 {
+  cursor: pointer;
+}
+.home Link{
+  cursor: pointer;
+  
+}
+.collection {
+  cursor: pointer;
+}
+.about {
+  cursor: pointer;
+}
+.contact {
+  cursor: pointer;
+}
+.main-bottom {
+  height:100vh;
+  width: 100%;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.main-bottom-content {
+  height:100vh;
+  width: 90%;
+  background-color: aqua;
+}
+
+@media (max-width: 1024px){
+  .nav {
+    height:40px;
+    width: 95%;
+    align-items: center;
+    padding: 38px 20px ;
+    border-bottom: 1px solid;
+    /* gap: 20px; */
+  }
+  .logo-1 {
+    width: 130px;
+    height: 60px;
+  }
+  .pages {
+    padding: 3px;
+    width: 28%;
+    gap: 20px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin-right: 90px;
+  }
+  .icons {
+    gap: 15px;
+  }
+  .serch{
+    width: 110px;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: rgb(151, 153, 153);
+  }
+    .search-box p {
+    font-size: 12px;
+    margin-top: 1px;
+  }
+}
+
+@media (max-width: 768px){
+  .nav {
+    height:50px;
+    width: 100%;
+    align-items: center;
+    padding: 34px 20px ;
+    border-bottom: 1px solid;
+    /* gap: 20px; */
+  }
+
+  .pages {
+    padding: 3px;
+    width: 30%;
+    gap: 10px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-right: 100px;
+    font-size: 15px;
+  }
+  .icons {
+    gap: 15px;
+  }
+  .serch{
+    width: 120px;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: rgb(151, 153, 153);
+
+
+  }
+  .search-box p {
+    font-size: 12px;
+    margin-top: 1px;
+  }
+}
+  @media (max-width: 426px){
+    .nav {
+      height:40px;
+      width: 100%;
+      align-items: center;
+      padding: 28px 20px ;
+      border-bottom: 1px solid;
+      /* gap: 20px; */
+    }
+    .logo-1 {
+      width: 80px;
+      height: auto;
+    }
+  
+    .pages {
+      display: none;
+    }
+    .icons {
+      gap: 25px;
+    }
+    .serch{
+      width: 7px;
+      height: 7px;
+      border-radius: 20px;
+      border: 0px solid;
+      border-color: rgb(151, 153, 153);
+      /* margin-top: 3px; */
+      margin: 0px 15px;
+  
+  
+    }
+    .search-box {
+      display: none;
+    }
+    .serch-2 {
+      display: block;
+    }
+    cart-1 {
+      cursor: pointer;
+    }
+    profile-1 {
+    cursor: pointer;
+    }
+    .icons .icon-2{
+      position: absolute;
+      right: 39px;
+      border-radius: 50%;
+      top: 13px;
+      padding-left: 4.5px;
+      padding-top: 1.5px;
+      
+      }
+    .menu-list{
+      display: block;
+    }
+    .list-1 {
+      width: 18px;
+      height: 18px;
+    }
+
+  }

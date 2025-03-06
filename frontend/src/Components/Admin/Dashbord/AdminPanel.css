@@ -1,0 +1,117 @@
+.admin-panel-main {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0,77,54,255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.admin-panel-main1 {
+  height: 100vh;
+  width: 90%;
+}
+.admin-panel-navbar {
+  display: flex;
+  height: 7%;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  border: 1px solid black;
+  display: flex;
+justify-content: flex-end;
+align-items: center;
+
+}
+
+/* Admin Profile Section */
+.admin-profile {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #1d3557;
+height: 50px;
+width: 150px;
+}
+
+
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.admin-email {
+  font-size: 12px;
+  color: #d1d1d1;
+}
+
+
+.admin-panel {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.sidebar {
+  width: 250px;
+  background: #1d3557;  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+}
+
+.brand-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  color: white;
+}
+
+.menu-item:hover {
+  background-color: #544e4e;
+}
+
+.menu-item.active {
+  background-color: #544e4e;
+  font-weight: bold;
+}
+
+.menu-icon {
+  margin-right: 10px;
+}
+
+.main-content {
+  flex-grow: 1;
+  background-color: #1d3557;
+  padding: 20px;
+  overflow-y: auto;
+}

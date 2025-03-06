@@ -1,0 +1,431 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.user-profile-main {
+    width: 100%;
+    height: 100vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-profile {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(93, 114, 107); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-profile-left {
+    width: 20%;
+    height: 100vh;
+    background-color: #f5f5f7;
+    border: 1px solid black;
+
+}
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #ffffff;
+  }
+  
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    border-bottom: 1px solid black;
+  }
+  
+  .nav-item.active {
+    background-color: #ffffff;
+    font-weight: 600;
+  }
+  
+  .nav-item.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #333;
+  }
+  
+  .nav-icon {
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .nav-footer {
+    padding: 20px;
+    margin-top: auto;
+    
+  }
+  
+  .help-text {
+    margin-bottom: 20px;
+    font-weight: 500;
+    
+  }
+  
+  .logout-link {
+    color: #333;
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 15px;
+  }
+  
+  .user-profile-right {
+    width: 80%;
+    height: 100vh;
+    /* background-color: rgb(125, 238, 39); */
+    
+}
+.content {
+  flex: 1;
+  padding: 30px 40px;
+  
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #222;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);
+  
+
+}
+
+.settings-card {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.05);
+  border: 0.1px solid black;
+
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.card-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.edit-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.edit-button:hover {
+  color: #000;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.detail-item {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.detail-label {
+  font-weight: 500;
+  width: 120px;
+  color: #555;
+}
+
+.detail-value {
+  color: #222;
+}
+
+
+
+
+
+
+/* Blurred background when modal is open */
+.blurred {
+  filter: blur(5px);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal container */
+.modal-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Close button */
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+}
+
+/* Save button */
+.save-button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+  }
+  
+  .account-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f5f7;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px 0;
+  }
+  
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .nav-item.active {
+    background-color: #f5f5f7;
+    font-weight: 600;
+  }
+  
+  .nav-item.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #333;
+  }
+  
+  .nav-icon {
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .nav-footer {
+    padding: 20px;
+    margin-top: auto;
+  }
+  
+  .help-text {
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .logout-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 30px 40px;
+  }
+  
+  .page-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #222;
+  }
+  
+  .settings-card {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .card-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .edit-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+  
+  .edit-button:hover {
+    color: #000;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .detail-item {
+    margin-bottom: 15px;
+    display: flex;
+  }
+  
+  .detail-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .detail-label {
+    font-weight: 500;
+    width: 120px;
+    color: #555;
+  }
+  
+  .detail-value {
+    color: #222;
+  }
+  
+  @media (max-width: 768px) {
+    .account-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+    }
+  
+    .content {
+      padding: 20px;
+    }
+  
+    .detail-item {
+      flex-direction: column;
+    }
+  
+    .detail-label {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+  
+   */

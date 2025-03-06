@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.signup-user-main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,77,54,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.signup-user {
+    width: 65%;
+    height: 90vh;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+.signup-user-page-1 {
+    /* background-color: aqua; */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+}
+.signup-user-page1-content{
+    /* background-color: aquamarine; */
+    width: 80%;
+    height: 100%;
+    gap: 40px;
+    padding-left: 10px;
+}
+.sinup-logo-mobile {
+  display: none;
+}
+.user-welcome {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    
+}
+.user-welcome h1 {
+    margin-bottom: 10px;
+    font-size: larger;
+    font: 1em sans-serif;
+
+}
+/* .user-email {
+    width: 80%;
+    background-color: rgb(123, 141, 135);
+    display: flex;
+} */
+.user-signup-form {
+    
+}
+.user-form-data{
+
+}
+.user-form-data input {
+    width: 250px;
+    height: 33px;
+    margin: 3px 0px;
+    border-radius: 7px;
+    padding-left: 10px;
+    border-color: rgba(0,77,54,255);
+    font: 1em sans-serif;
+    font-size: small;
+
+}
+#user-password p{
+    /* text-align: center; */
+    padding-left: 120px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.user-btn {
+
+}
+.user-submit-btn {
+    width: 250px;
+    height: 33px;
+    border-radius: 7px;
+    background-color: rgba(0,77,54,255);
+    color: white;
+    cursor: pointer;
+}
+.user-signup-divider {
+    display: flex;
+    align-items: center;
+    margin: 25px 80px 15px 0px;
+    color: #999;
+    font-size: 0.9rem;
+  }
+  
+  .user-signup-divider::before,
+  .user-signup-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #e0e0e0;
+  }
+  
+  .user-signup-divider span {
+    padding: 0px 0px;
+  }
+  .user-signup-google-btn {
+    width: 250px;
+    height: 33px;
+    color:black;
+    margin-top: 10px;
+    cursor: pointer;
+    /* padding: 10px; */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: rgb(164, 164, 164);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }  
+
+  .signup-prompt{
+    padding-left: 0px;
+    margin-top: 10px;
+
+  }
+  .signup-user-page-2 {
+    background-color: rgba(0,77,54,255);
+    width: 47%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    
+  }
+  .signup-user-page-2 img {
+    /* width: 100%;
+    height: 90vh; */
+  }
+
+  @media (max-width: 1024px){
+
+    .signup-user {
+    width: 65%;
+    height: 80vh;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+    .signup-user-page-1 {
+      margin-top: 50px;
+      width: 40%;
+      height: 95%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* text-align: center; */
+  }
+  .signup-user-page1-content{
+      width: 80%;
+      height: 100%;
+      gap: 40px;
+      padding-left: 10px;
+  }
+  .user-welcome {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    
+}
+.user-welcome h1 {
+    margin-bottom: 10px;
+    font-size: larger;
+    font: 1em sans-serif;
+
+}
+    .signup-user {
+      width: 65%;
+      height: 80vh;
+      background-color: white;
+      color: black;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  } 
+  .user-signup-divider {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+    color: #999;
+    font-size: 0.9rem;
+  }
+    .signup-user-page-2 {
+      width: 50%;
+      height: 80%;
+      margin-left: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 22px;
+      
+    }
+    .signup-user-page-2 img {
+      width: 90%;
+      height: 80vh;
+    }
+  }
+  @media (max-width: 768px) {
+    .sinup-logo-mobile {
+      display: block;
+      margin-bottom: 20px;
+      width: 80%;
+      height: 100px;
+    }
+    .signup-user {
+        width: 75%;
+        height: 95vh;
+
+    }
+    .signup-user-page-1 {
+      width: 65%;
+      height: 95%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* text-align: center; */
+  }
+  .signup-user-page1-content{
+      width: 80%;
+      height: 100%;
+      gap: 40px;
+      padding-left: 10px;
+  }
+  .user-welcome {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding-left: 5px;
+    
+}
+.user-welcome h1 {
+    margin-bottom: 10px;
+    font-size: larger;
+    font: 1em sans-serif;
+
+}
+.signup-prompt {
+  padding-left: 0px;
+  margin-top: 20px;
+}
+    .signup-user-page-2 {
+      display: none;
+      
+    }
+  }
+
+    @media (max-width: 426px){
+      .sinup-logo-mobile {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 100px;
+      }
+      .signup-user {
+          width: 100%;
+          height: 100vh;
+  
+      }
+      .signup-user-page-1 {
+        width: 85%;
+        height: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+    }
+    .signup-user-page1-content{
+        width: 80%;
+        height: 100%;
+        gap: 40px;
+        padding-left: 10px;
+    }
+    .user-welcome {
+      margin-top: 0px;
+      margin-bottom: 40px;
+      padding-left: 5px;
+      
+  }
+  .user-welcome h1 {
+      margin-bottom: 10px;
+      font-size: larger;
+      font: 1em sans-serif;
+  
+  }
+  .signup-prompt {
+    padding-left: 0px;
+    margin-top: 20px;
+  }
+    }
+
+    @media (max-width: 376px){
+      .sinup-logo-mobile {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 100px;
+      }
+      .signup-user {
+          width: 100%;
+          height: 100vh;
+  
+      }
+     
+    }
+    @media (max-width: 320px){
+      .signup-user-page-1 {
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+        display: flex
+;
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+    }
+      .sinup-logo-mobile {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 100px;
+      }
+      .signup-user {
+          width: 100%;
+          height: 100vh;
+  
+      }
+    }
