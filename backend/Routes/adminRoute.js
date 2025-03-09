@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { deleteUsers, usersDetails } from "../Controller/Admin/userManagment.js";
+import { deleteUsers, updateUser, usersDetails } from "../Controller/Admin/userManagment.js";
 import adminMiddleware from "../Middleware/adminMidleware.js";
 import { adminProfile, deleteAdmin, updateAdminAcc } from "../Controller/Admin/adminProfile.js";
 
@@ -15,6 +15,7 @@ adminRoute.post('/update',adminMiddleware,updateAdminAcc)
 //User managment
 adminRoute.get('/users',adminMiddleware,usersDetails,)
 adminRoute.delete('/userdelete',adminMiddleware,deleteUsers)
+adminRoute.put('/userupdate',adminMiddleware,updateUser)
 
 
 
